@@ -1,0 +1,259 @@
+
+/* General page styles */
+:root {
+    --primary-color: #17324d;
+    --secondary-color: #e6edf3;
+    --accent-color: #f2c14e;
+    --text-color: #222222;
+    --white-color: #ffffff;
+    --border-color: #cccccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+h2 {
+    margin-top: 0;
+    padding: 0.75rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+/* Header and branding */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Mobile navigation */
+#menu-button {
+    align-self: flex-end;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#primary-nav.open {
+    display: flex;
+}
+
+#primary-nav a {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 4px;
+    color: var(--white-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+#primary-nav a:hover,
+#primary-nav a:focus-visible {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+#primary-nav a.active {
+    border: 2px solid var(--accent-color);
+    font-weight: 700;
+}
+
+/* Main content */
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.about,
+.photo,
+.certificate {
+    min-width: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.about > p,
+.photo-placeholder,
+.certificate > p {
+    margin: 1rem;
+}
+
+.photo-placeholder {
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.course-filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.course-filters button {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.course-filters button:hover,
+.course-filters button:focus-visible {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.course-filters button:focus-visible,
+a:focus-visible,
+#menu-button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0 1rem 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.course-card.completed {
+    border: 2px solid #176b3a;
+}
+
+.course-card.completed::after {
+    content: "Completed";
+    display: block;
+    margin-top: 0.5rem;
+    color: #14532d;
+    font-weight: 700;
+}
+
+.course-card p {
+    margin-bottom: 0;
+}
+
+#total-credits {
+    padding: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: var(--white-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
