@@ -1,0 +1,60 @@
+
+/* Larger screen styles */
+
+@media screen and (min-width: 38rem) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin: 0;
+    }
+
+    #main-nav a {
+        border: none;
+        border-radius: 5px;
+        padding: 0.7rem 1rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .members-list .member-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}

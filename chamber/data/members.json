@@ -1,0 +1,66 @@
+
+[
+  {
+    "name": "Riverside Energy Services",
+    "address": "Trans-Amadi Industrial Layout, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0001",
+    "website": "https://example.com",
+    "image": "riverside-energy.svg",
+    "membership": 3,
+    "category": "Energy and Engineering"
+  },
+  {
+    "name": "Garden City Logistics",
+    "address": "Old Aba Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0002",
+    "website": "https://example.com",
+    "image": "garden-city-logistics.svg",
+    "membership": 2,
+    "category": "Transportation and Logistics"
+  },
+  {
+    "name": "Niger Delta Digital Solutions",
+    "address": "Peter Odili Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0003",
+    "website": "https://example.com",
+    "image": "niger-delta-digital.svg",
+    "membership": 3,
+    "category": "Information Technology"
+  },
+  {
+    "name": "Creek Road Business Centre",
+    "address": "Creek Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0004",
+    "website": "https://example.com",
+    "image": "creek-road-centre.svg",
+    "membership": 1,
+    "category": "Business Services"
+  },
+  {
+    "name": "Atlantic Foods and Farms",
+    "address": "Rumuokoro, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0005",
+    "website": "https://example.com",
+    "image": "atlantic-foods.svg",
+    "membership": 2,
+    "category": "Agriculture and Food"
+  },
+  {
+    "name": "Harbour Medical Supplies",
+    "address": "D-Line, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0006",
+    "website": "https://example.com",
+    "image": "harbour-medical.svg",
+    "membership": 1,
+    "category": "Healthcare"
+  },
+  {
+    "name": "Eastern Construction Group",
+    "address": "Ada George Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 000 0007",
+    "website": "https://example.com",
+    "image": "eastern-construction.svg",
+    "membership": 3,
+    "category": "Construction"
+  }
+]

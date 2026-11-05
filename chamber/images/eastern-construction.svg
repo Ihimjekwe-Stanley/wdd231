@@ -1,0 +1,20 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160">
+  <rect width="300" height="160" rx="16" fill="#252b30"/>
+
+  <circle cx="75" cy="80" r="38" fill="#d5a43a"/>
+
+  <path d="M49 105V76l26-20 26 20v29H85V85H65v20z"
+        fill="#123b35"/>
+
+  <text x="125" y="73"
+        fill="#fff"
+        font-size="18"
+        font-family="Arial"
+        font-weight="bold">EASTERN</text>
+
+  <text x="125" y="99"
+        fill="#d5a43a"
+        font-size="16"
+        font-family="Arial">CONSTRUCTION</text>
+</svg>

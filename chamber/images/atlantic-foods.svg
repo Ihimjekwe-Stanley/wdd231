@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160">
+  <rect width="300" height="160" rx="16" fill="#123b35"/>
+  <circle cx="75" cy="80" r="38" fill="#d5a43a"/>
+  <path d="M75 110V65 M75 80C48 78 49 52 75 62 M75 88C101 86 101 59 75 70" fill="none" stroke="#123b35" stroke-width="5" stroke-linecap="round"/>
+  <text x="125" y="73" fill="#fff" font-size="18" font-family="Arial" font-weight="bold">ATLANTIC</text>
+  <text x="125" y="99" fill="#d5a43a" font-size="16" font-family="Arial">FOODS &amp; FARMS</text>
+</svg>

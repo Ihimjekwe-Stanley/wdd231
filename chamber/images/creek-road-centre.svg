@@ -1,0 +1,20 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160">
+  <rect width="300" height="160" rx="16" fill="#f5f3ed"/>
+
+  <circle cx="75" cy="80" r="38" fill="#123b35"/>
+
+  <path d="M52 65h46v35H52z M60 55h30v10H60z M67 75h16v25H67z"
+        fill="#d5a43a"/>
+
+  <text x="125" y="73"
+        fill="#123b35"
+        font-size="18"
+        font-family="Arial"
+        font-weight="bold">CREEK ROAD</text>
+
+  <text x="125" y="99"
+        fill="#252b30"
+        font-size="16"
+        font-family="Arial">BUSINESS CENTRE</text>
+</svg>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore businesses and organizations in the Port Harcourt Chamber of Commerce directory. Connect with local businesses and discover services in Port Harcourt, Rivers State.">
+
+    <meta name="author" content="Stanley Ihimjekwe">
+
+    <meta property="og:title" content="Business Directory | Port Harcourt Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover local businesses and connect with the Port Harcourt business community.">
+    <meta property="og:image"
+        content="https://ihimjekwe-stanley.github.io/wdd231/chamber/images/chamber-logo.svg">
+    <meta property="og:url"
+        content="https://ihimjekwe-stanley.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/chamber-logo.png"
+                alt="Port Harcourt Chamber of Commerce logo">
+            <div>
+                <h1>Port Harcourt</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" class="active" aria-current="page">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+
+        <p class="intro">
+            Discover businesses and organizations serving Port Harcourt.
+            Connect, collaborate and grow with our local business community.
+        </p>
+
+        <div class="view-buttons">
+            <button id="grid-view" aria-pressed="true">Grid View</button>
+            <button id="list-view" aria-pressed="false">List View</button>
+        </div>
+
+        <section id="members-container"
+            class="members-grid"
+            aria-label="Chamber member businesses">
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Port Harcourt Chamber of Commerce</h3>
+            <p>Port Harcourt, Rivers State, Nigeria</p>
+            <p>Email: info@portharcourtchamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="development-info">
+            <p>Stanley Ihimjekwe</p>
+            <p>WDD 231 - Web Frontend Development I</p>
+            <p>&copy; <span id="current-year"></span>
+                Port Harcourt Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

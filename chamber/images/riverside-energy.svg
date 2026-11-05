@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" role="img" aria-labelledby="title">
+  <title id="title">Riverside Energy Services logo</title>
+  <rect width="300" height="160" rx="16" fill="#123b35"/>
+  <circle cx="75" cy="80" r="38" fill="#d5a43a"/>
+  <path d="M82 38 55 86h22l-8 36 31-50H78z" fill="#123b35"/>
+  <text x="130" y="73" fill="#ffffff" font-size="19" font-family="Arial" font-weight="bold">RIVERSIDE</text>
+  <text x="130" y="99" fill="#d5a43a" font-size="15" font-family="Arial">ENERGY SERVICES</text>
+</svg>
