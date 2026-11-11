@@ -23,9 +23,12 @@
     }
 
     #main-nav a {
-        border: none;
-        border-radius: 5px;
-        padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
     }
 
     main {
