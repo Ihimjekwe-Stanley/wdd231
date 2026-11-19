@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for applying for membership with the Port Harcourt Chamber of Commerce.">
+    <meta name="author" content="Stanley Ihimjekwe">
+    <title>Application Received | Port Harcourt Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="canonical" href="https://ihimjekwe-stanley.github.io/wdd231/chamber/thankyou.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/chamber-logo.png"
+                alt="Port Harcourt Chamber of Commerce logo">
+
+            <div>
+                <p class="brand-name">Port Harcourt</p>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-intro">
+            <h1>Application Received!</h1>
+            <p>Thank you for applying to join the Port Harcourt Chamber of Commerce.</p>
+        </section>
+
+        <section class="application-section">
+            <h2>Application Details</h2>
+            <p>We have received the following information from your application:</p>
+
+            <dl>
+                <dt>First Name</dt>
+                <dd id="submitted-first-name"></dd>
+
+                <dt>Last Name</dt>
+                <dd id="submitted-last-name"></dd>
+
+                <dt>Email Address</dt>
+                <dd id="submitted-email"></dd>
+
+                <dt>Mobile Phone</dt>
+                <dd id="submitted-phone"></dd>
+
+                <dt>Business / Organization</dt>
+                <dd id="submitted-organization"></dd>
+
+                <dt>Application Date and Time</dt>
+                <dd id="submitted-timestamp"></dd>
+            </dl>
+
+            <p><a href="index.html">Return to the Chamber homepage</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Port Harcourt Chamber of Commerce</h2>
+            <p>Port Harcourt, Rivers State, Nigeria</p>
+            <p>Email: info@portharcourtchamber.org</p>
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="development-info">
+            <p>Stanley Ihimjekwe</p>
+            <p>WDD 231 - Web Frontend Development I</p>
+            <p>
+                &copy; <span id="current-year"></span>
+                Port Harcourt Chamber of Commerce
+            </p>
+            <p>
+                Last Modified: <span id="last-modified"></span>
+            </p>
+        </div><
+    </footer>
+</body>
+</html>

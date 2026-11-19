@@ -1,0 +1,228 @@
+
+/* Port Harcourt Chamber - Join Page */
+
+/* Introduction */
+.join-intro {
+    max-width: 750px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+/* Main layout */
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.application-section,
+.membership-section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.application-section h2,
+.membership-section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Application form */
+.application-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.application-section label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.application-section input:not([type="hidden"]),
+.application-section select,
+.application-section textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: var(--text-color);
+    font: inherit;
+}
+
+.application-section input:focus,
+.application-section select:focus,
+.application-section textarea:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.application-section input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.application-section input[type="submit"]:hover {
+    background-color: #205c50;
+}
+
+/* Membership cards */
+.membership-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.membership-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.3rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+    opacity: 0;
+    animation: cardEntrance 0.8s ease forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.55s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.membership-card h3 {
+    color: var(--primary-color);
+}
+
+.membership-card p {
+    color: var(--text-color);
+}
+
+.modal-button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background-color: #205c50;
+}
+
+/* Initial page-load animation */
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Membership dialogs */
+dialog {
+    width: min(90%, 450px);
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    color: var(--text-color);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+dialog h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+dialog li {
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+.close-modal {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.close-modal:hover {
+    background-color: #205c50;
+}
+
+/* Tablet and desktop layout */
+@media screen and (min-width: 48rem) {
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+        gap: 2rem;
+    }
+
+    .membership-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large desktop */
+@media screen and (min-width: 70rem) {
+
+    .membership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
