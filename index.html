@@ -7,7 +7,7 @@
 
     <meta
         name="description"
-        content="Stanley Ihimjekwe's WDD 231 course home page featuring course information, web development learning, and completed courses."
+        content="Stanley Ihimjekwe's WDD 231 course home page, with information about his studies and web development courses."
     >
     <meta name="author" content="Stanley Ihimjekwe">
 
@@ -53,7 +53,6 @@
         <nav id="primary-nav" aria-label="Main navigation">
             <a href="index.html" class="active" aria-current="page">Home</a>
             <a href="chamber/directory.html">Chamber</a>
-            <a href="final/index.html">Final</a>
         </nav>
     </header>
 
@@ -63,10 +62,12 @@
         <div class="home-layout">
             <section class="about">
                 <h2>About Me</h2>
-                <p> My name is Stanley Ihimjekwe. I am studying Software
-                    Development at BYU-Idaho and building my skills in web technologies.
-                    I enjoy learning new things in tech, solving problems, and
-                    developing practical solutions.
+                <p>
+                    My name is Stanley Ihimjekwe. I have a background in
+                    Chemical Engineering and I am currently studying
+                    Software Development at BYU-Idaho. I enjoy learning
+                    new skills, solving problems, and finding ways to use
+                    technology to create useful solutions.
                 </p>
             </section>
 
@@ -83,20 +84,10 @@
             <section class="certificate">
                 <h2>Web Certificate Courses</h2>
 
-                <div
-                    class="course-filters"
-                    role="group"
-                    aria-label="Filter courses"
-                >
-                    <button type="button" id="all-courses">
-                        All Courses
-                    </button>
-                    <button type="button" id="wdd-courses">
-                        WDD Courses
-                    </button>
-                    <button type="button" id="cse-courses">
-                        CSE Courses
-                    </button>
+                <div class="course-filters" role="group" aria-label="Filter courses">
+                    <button type="button" id="all-courses">All Courses</button>
+                    <button type="button" id="wdd-courses">WDD Courses</button>
+                    <button type="button" id="cse-courses">CSE Courses</button>
                 </div>
 
                 <p id="course-count" aria-live="polite">
@@ -104,7 +95,7 @@
                 </p>
 
                 <div id="course-list" class="course-list">
-                    <!-- Course cards will be added by JavaScript. -->
+                    <!-- JavaScript displays the courses here. -->
                 </div>
 
                 <p id="total-credits">Total Credits: 0</p>

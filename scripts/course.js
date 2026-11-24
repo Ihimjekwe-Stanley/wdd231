@@ -79,8 +79,7 @@ const courses = [
 ]
 
 /*
-  Keep the official course array above this code.
-  Set completed: true only for courses you have completed.
+  Course information and completion status.
 */
 
 const courseList = document.querySelector("#course-list");
@@ -91,10 +90,9 @@ const allButton = document.querySelector("#all-courses");
 const wddButton = document.querySelector("#wdd-courses");
 const cseButton = document.querySelector("#cse-courses");
 
-let currentFilter = "ALL";
-
+// Create and display a card for each course.
 function displayCourses(courseArray) {
-    courseList.innerHTML = "";
+    courseList.replaceChildren();
 
     courseArray.forEach((course) => {
         const card = document.createElement("article");
@@ -123,32 +121,30 @@ function displayCourses(courseArray) {
     );
 
     totalCredits.textContent = `Total Credits: ${creditTotal}`;
-    courseCount.textContent =
-        `Showing ${courseArray.length} course(s)`;
-}
+    courseCount.textContent = `Showing ${courseArray.length} course(s)`;
+};
 
+// Filter the courses by subject.
 function filterCourses(subject) {
-    currentFilter = subject;
+    let filteredCourses = courses;
 
-    let filteredCourses;
-
-    if (subject === "ALL") {
-        filteredCourses = courses;
-    } else {
+    if (subject !== "ALL") {
         filteredCourses = courses.filter(
             (course) => course.subject === subject
         );
     }
 
-    allButton.setAttribute("aria-pressed", String(subject === "ALL"));
-    wddButton.setAttribute("aria-pressed", String(subject === "WDD"));
-    cseButton.setAttribute("aria-pressed", String(subject === "CSE"));
+    allButton.setAttribute("aria-pressed", subject === "ALL");
+    wddButton.setAttribute("aria-pressed", subject === "WDD");
+    cseButton.setAttribute("aria-pressed", subject === "CSE");
 
     displayCourses(filteredCourses);
 }
 
+// Add click events to the filter buttons.
 allButton.addEventListener("click", () => filterCourses("ALL"));
 wddButton.addEventListener("click", () => filterCourses("WDD"));
 cseButton.addEventListener("click", () => filterCourses("CSE"));
 
-filterCourses(currentFilter);
+// Show all courses when the page loads.
+filterCourses("ALL");
