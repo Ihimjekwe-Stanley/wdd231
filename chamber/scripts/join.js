@@ -1,19 +1,19 @@
 
-// Join page functionality
+// Join page JavaScript
 
-// Set the current date and time in the hidden form field.
-const timestampField = document.querySelector("#timestamp");
+// Add the current date and time to the application form.
+const timestamp = document.querySelector("#timestamp");
 
-if (timestampField) {
-    timestampField.value = new Date().toISOString();
+if (timestamp) {
+    timestamp.value = new Date().toISOString();
 }
 
-// Open membership information dialogs.
-const modalButtons = document.querySelectorAll(".modal-button");
+// Open the membership benefits when a button is clicked.
+const membershipButtons = document.querySelectorAll(".modal-button");
 
-modalButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const modalId = button.dataset.modal;
+membershipButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const modalId = button.getAttribute("data-modal");
         const modal = document.getElementById(modalId);
 
         if (modal) {
@@ -22,11 +22,11 @@ modalButtons.forEach((button) => {
     });
 });
 
-// Close membership information dialogs.
+// Close the membership benefits dialog.
 const closeButtons = document.querySelectorAll(".close-modal");
 
-closeButtons.forEach((button) => {
-    button.addEventListener("click", () => {
+closeButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
         const modal = button.closest("dialog");
 
         if (modal) {
